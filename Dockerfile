@@ -1,5 +1,6 @@
 FROM debian:sid
 
+# auto retry of specific times when fail from apt command
 RUN echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/99AcquireRetries
 
 ADD http://httpredir.debian.org/debian/project/trace/ftp-master.debian.org /etc/trace_ftp-master.debian.org
