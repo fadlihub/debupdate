@@ -1,3 +1,4 @@
+# base image used
 FROM debian:sid
 
 # auto retry of specific times when fail from apt command
