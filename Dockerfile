@@ -10,4 +10,6 @@ ADD http://security.debian.org/project/trace/security-master.debian.org /etc/tra
 
 # run update from apt repo
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN xyz
 
+# last line of docker file
